@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en" style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+
+ <title>JAMB EXPO SUBSCRIPTION PORTAL</title>
+ <meta property="og:site_name" content="JAMB EXPO SUBSCRIPTION PORTAL">
+  <meta name="description" content="JAMBEXPO,JAMBANSWER,JAMBQUESTIONS,JAMBUPGRADE,">
+  <meta property="og:title" content="JAMB EXPO SUBSCRIPTION PORTAL">
+  <meta property="og:url" content="index.php">
+  <meta property="og:description" content="ALL JAMB STUDENTs ARE TO LOGIN WITH THEIR MOBILE NUMBER FOR JAMB QUESTIONS AND ANSWERS">
+  <meta property="og:image" content="../www.nigeriaschool.com.ng/wp-content/uploads/2016/03/check-Jamb-Result.jpg">
+
+
+ <link rel="apple-touch-icon" sizes="76x76" href="https://myjamb.com.ng/jamb/p/j%2b.png">
+ <link rel="icon" type="image/png" href="https://myjamb.com.ng/jamb/p/j%2b.png">
+
+  <link href="css" rel="stylesheet">
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome.min.css" rel="stylesheet">
+  
+
+  <link href="style.css" rel="stylesheet">
+  <script src="modernizr-2.6.2.min.js.download"></script>
+  
+  <style>
+  #loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+
+    -webkit-animation: spin 1s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+
+        -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+
+        -webkit-animation: spin 1s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg); 
+            -ms-transform: rotate(0deg); 
+            transform: rotate(0deg);  
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  
+            -ms-transform: rotate(360deg);  
+            transform: rotate(360deg);  }
+    }
+    @keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  
+            -ms-transform: rotate(0deg);  
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  
+            -ms-transform: rotate(360deg); 
+            transform: rotate(360deg);  
+        }
+    }
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #0b5902;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  
+        -ms-transform: translateX(0);  
+        transform: translateX(0); 
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+  
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  
+            -ms-transform: translateX(-100%);  
+                transform: translateX(-100%);  
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%); 
+            -ms-transform: translateX(100%); 
+                transform: translateX(100%); 
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0.7;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  
+            -ms-transform: translateY(-100%);  
+                transform: translateY(-100%); 
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+	
+    .no-js #loader-wrapper {
+        display: none;
+    }
+  </style>
+<link href="indext_style.css" rel="stylesheet"></head>
+       
+	   <body id="bg" class="loaded" style="background-image: url(jb1.jpg)"><div id="loader-wrapper">
+           
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+		</div>
+        
+
+		
+		<div style="text-align:center; padding-top:50px;">
+		 <img src="download.png" width="110px" height="120px" alt="logo" >
+		</div>
+            
+
+  <div class="form-area">
+    <div style="line-height: 1; padding-top:10px; color:#1e8b09; text-shadow:1px 1px 1px black; " class="text-center">
+  <h3>
+   Sign-in
+  </h3>
+  </div>
+  <label>With your Mobile Number</label>
+				    
+	            <div class="input-group no-border">
+                     <div class="input-group-append">
+                     <div class="input-group-text" style=" background-color:white; border-radius:5px 0px 0px 5px;">
+                        <img src="call.png" width="12px" height="15"></i>
+                     </div>
+                     </div>
+                    <input type="tel" value="" class="form-control" style=" background-color:white; color:green; border-radius:0px 5px 5px 0px;" name="phone" maxlength="11" minlength="11" placeholder="Mobile Number..." required="">
+                </div>
+  <br>
+  <form action="MENU.html">      
+  <div> 
+  <button type="submit" name="submit" class="btn btn-success">  Log in</button> 
+  </div>
+ </form>
+ <style>
+ #bg{background:url("bg.jpg" ) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    background-position:center;
+   
+    }
+ 
+ </style>
+ 
+
+	<script>
+	var images = [
+	"bbc.jpg",
+	"text.jpg",
+	"cbt.png",
+	"bg.jpg",
+	"image.jpg",
+    "jb1.jpg",
+	"image.jpg",
+	]
+	var imageHead = document.getElementById("bg");
+	var i = 0; setInterval(function() { imageHead.style.backgroundImage ="url(" + images[i] + ")";
+	 i = i + 1;
+	  if (i == images.length) { i = 0;
+	   } },5000);
+	
+	</script>
+     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script><script src="jquery-1.9.1.min.js.download"></script>
+	<script src="main.js.download"></script>  
+
+</body></html>
