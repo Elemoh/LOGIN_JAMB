@@ -1310,7 +1310,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 #contact .php-email-form .validate {
   display: none;
-  color: red;
+  color: green;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -1453,7 +1453,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   padding: 25px;
 }
 
-.footer .copyrights p, .footer .copyrights .credits {
+.footer .copyrights p, .footer .copyrights .cgreenits {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
@@ -1462,7 +1462,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   letter-spacing: 0;
 }
 
-.footer .copyrights p a, .footer .copyrights .credits a {
+.footer .copyrights p a, .footer .copyrights .cgreenits a {
   letter-spacing: 0;
   color: #71c55d;
 }

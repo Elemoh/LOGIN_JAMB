@@ -2302,7 +2302,7 @@ Created using IcoMoon - icomoon.io
 .now-ui-icons.shopping_cart-simple:before {
   content: "\ea1d"; }
 
-.now-ui-icons.shopping_credit-card:before {
+.now-ui-icons.shopping_cgreenit-card:before {
   content: "\ea28"; }
 
 .now-ui-icons.shopping_delivery-fast:before {
@@ -2778,23 +2778,23 @@ Created using IcoMoon - icomoon.io
     background: #888;
     background: linear-gradient(#888 0%, #000 80%);
     z-index: 3; }
-  .sidebar[data-color="blue"]:after,
-  .off-canvas-sidebar[data-color="blue"]:after {
+  .sidebar[data-color="red"]:after,
+  .off-canvas-sidebar[data-color="red"]:after {
     background: #2CA8FF; }
-  .sidebar[data-color="blue"] .nav li.active > a:not([data-toggle="collapse"]),
-  .off-canvas-sidebar[data-color="blue"] .nav li.active > a:not([data-toggle="collapse"]) {
+  .sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]),
+  .off-canvas-sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) {
     color: #2CA8FF; }
-    .sidebar[data-color="blue"] .nav li.active > a:not([data-toggle="collapse"]) i,
-    .off-canvas-sidebar[data-color="blue"] .nav li.active > a:not([data-toggle="collapse"]) i {
+    .sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) i,
+    .off-canvas-sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) i {
       color: #2CA8FF; }
-  .sidebar[data-color="green"]:after,
-  .off-canvas-sidebar[data-color="green"]:after {
+  .sidebar[data-color="red"]:after,
+  .off-canvas-sidebar[data-color="red"]:after {
     background: #18ce0f; }
-  .sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]),
-  .off-canvas-sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]) {
+  .sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]),
+  .off-canvas-sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) {
     color: #18ce0f; }
-    .sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]) i,
-    .off-canvas-sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]) i {
+    .sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) i,
+    .off-canvas-sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) i {
       color: #18ce0f; }
   .sidebar[data-color="orange"]:after,
   .off-canvas-sidebar[data-color="orange"]:after {
@@ -2805,14 +2805,14 @@ Created using IcoMoon - icomoon.io
     .sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]) i,
     .off-canvas-sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]) i {
       color: #f96332; }
-  .sidebar[data-color="red"]:after,
-  .off-canvas-sidebar[data-color="red"]:after {
+  .sidebar[data-color="green"]:after,
+  .off-canvas-sidebar[data-color="green"]:after {
     background: #FF3636; }
-  .sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]),
-  .off-canvas-sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) {
+  .sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]),
+  .off-canvas-sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]) {
     color: #FF3636; }
-    .sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) i,
-    .off-canvas-sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) i {
+    .sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]) i,
+    .off-canvas-sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]) i {
       color: #FF3636; }
   .sidebar[data-color="yellow"]:after,
   .off-canvas-sidebar[data-color="yellow"]:after {
@@ -2867,9 +2867,9 @@ Created using IcoMoon - icomoon.io
   height:190px;
   padding-top: 75px;
   padding-bottom:35px;
-  background: red;
+  background: green;
   /* fallback for old browsers */
-  background: linear-gradient(to right, black 0%, #bb0202 60%, red 100%);
+  background: linear-gradient(to right, black 0%, #bb0202 60%, green 100%);
   position: relative;
   overflow: hidden; }
   .panel-header .header .title {
@@ -2983,15 +2983,15 @@ Created using IcoMoon - icomoon.io
   .fixed-plugin .badge.active,
   .fixed-plugin .badge:hover {
     border-color: #00bbff; }
-  .fixed-plugin .badge-blue {
+  .fixed-plugin .badge-red {
     background-color: #2CA8FF; }
-  .fixed-plugin .badge-green {
+  .fixed-plugin .badge-red {
     background-color: #18ce0f; }
   .fixed-plugin .badge-orange {
     background-color: #f96332; }
   .fixed-plugin .badge-yellow {
     background-color: #FFB236; }
-  .fixed-plugin .badge-red {
+  .fixed-plugin .badge-green {
     background-color: #FF3636; }
   .fixed-plugin h5 {
     font-size: 14px;
@@ -3158,13 +3158,13 @@ Created using IcoMoon - icomoon.io
       background-color: #f96332; }
     .card[data-background-color="orange"] .card-footer .stats {
       color: #FFFFFF; }
-  .card[data-background-color="red"] {
+  .card[data-background-color="green"] {
     background-color: #FF3636; }
   .card[data-background-color="yellow"] {
     background-color: #FFB236; }
-  .card[data-background-color="blue"] {
+  .card[data-background-color="red"] {
     background-color: #2CA8FF; }
-  .card[data-background-color="green"] {
+  .card[data-background-color="red"] {
     background-color: #18ce0f; }
   .card .image {
     overflow: hidden;

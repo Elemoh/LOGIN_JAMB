@@ -1,5 +1,5 @@
 <style type="text/css">
-	input::placeholder{color:green;}
+	input::placeholder{color:red;}
 	.btn-success{color:white;
         border-radius:5px 5px 5px 5px;
          background:#114d05;
@@ -40,6 +40,6 @@
      text-align:center;
 	  font-size:12px;
 	  padding:1%;   
-	  background-color:red;
+	  background-color:green;
 	  font-weight:4px;}
 	</style>
